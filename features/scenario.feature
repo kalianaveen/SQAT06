@@ -1,19 +1,19 @@
-Feature: Simple maths
-  In order to do maths
+Feature: Test Figure1 signup
+  In order to test
   As a developer
-  I want to increment variables
+  I want to write automated test cases
 
-  Scenario: easy maths
-    Given I go to duck duck go
-    When  I search for WebdriverIO
-    Then  I should see the search results
+    Scenario: Invalid signup
+    Given I go to figure1 website for invalid signup
+    When I type Username invalid signup
+    Then I should see invalid signup result
 
-  Scenario: easy maths
-    Given I go to google
-    When  I search for cnn on google
-    Then  I should see the search results on google
+    Scenario: Valid signup
+    Given I go to figure1 website for valid signup
+    When I type Username valid signup
+    Then I should see result valid signup
 
-     Scenario: easy maths
-    Given I go to cbc
-    When  I click on medals on cbc
-    Then  I should see the medals page on cbc 
+    Scenario: Login to confirm signup
+    Given I go to figure1 website to confirm signup
+    When I type email address and password
+    Then I should see account confirmation page
