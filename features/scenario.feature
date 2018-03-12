@@ -13,7 +13,4 @@ Feature: Test Figure1 signup
     When I type Username valid signup
     Then I should see result valid signup
 
-    Scenario: Login to confirm signup
-    Given I go to figure1 website to confirm signup
-    When I type email address and password
-    Then I should see account confirmation page
+    
